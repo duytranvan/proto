@@ -1,0 +1,134 @@
+; Packaging information for proto
+name = "proto"
+description = ""
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Administration
+dependencies[] = module_filter
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = pm_existing_pages
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+; Development
+dependencies[] = devel
+dependencies[] = profiler_builder
+; Display Suite
+dependencies[] = ds
+; Fields
+dependencies[] = email
+dependencies[] = entityreference
+dependencies[] = link
+; Other
+dependencies[] = compass
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = libraries
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+; Panels
+dependencies[] = panels
+dependencies[] = panels_breadcrumbs
+dependencies[] = panels_everywhere
+; Performance and scalability
+dependencies[] = entitycache
+; Rules
+dependencies[] = rules
+; SEO
+dependencies[] = page_title
+; Scald
+dependencies[] = scald
+; User interface
+dependencies[] = ckeditor
+dependencies[] = jquery_update
+; Views
+dependencies[] = views
+; XML sitemap
+dependencies[] = xmlsitemap
+; Features
+dependencies[] = features
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'seven'
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'Europe/Berlin'
+variables[entitycache_enabled] = true
+variables[entityreference:base-tables][scald_atom][0] = 'scald_atoms'
+variables[entityreference:base-tables][scald_atom][1] = 'sid'
+variables[entityreference:base-tables][comment][0] = 'comment'
+variables[entityreference:base-tables][comment][1] = 'cid'
+variables[entityreference:base-tables][node][0] = 'node'
+variables[entityreference:base-tables][node][1] = 'nid'
+variables[entityreference:base-tables][file][0] = 'file_managed'
+variables[entityreference:base-tables][file][1] = 'fid'
+variables[entityreference:base-tables][taxonomy_term][0] = 'taxonomy_term_data'
+variables[entityreference:base-tables][taxonomy_term][1] = 'tid'
+variables[entityreference:base-tables][taxonomy_vocabulary][0] = 'taxonomy_vocabulary'
+variables[entityreference:base-tables][taxonomy_vocabulary][1] = 'vid'
+variables[entityreference:base-tables][user][0] = 'users'
+variables[entityreference:base-tables][user][1] = 'uid'
+variables[entityreference:base-tables][rules_config][0] = 'rules_config'
+variables[entityreference:base-tables][rules_config][1] = 'id'
+variables[filter_fallback_format] = 'plain_text'
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = 'content/[node:title]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[scald_actions_powers][fetch] = 0
+variables[scald_actions_powers][edit] = 1
+variables[scald_actions_powers][view] = 2
+variables[scald_actions_powers][delete] = 3
+variables[scald_author_vocabulary] = 'scald_authors'
+variables[scald_context_fallbacks][@default][0] = 'title'
+variables[scald_tags_vocabulary] = 'scald_tags'
+variables[theme_default] = 'bartik'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+variables[xmlsitemap_generated_last] = 1415576162
+
